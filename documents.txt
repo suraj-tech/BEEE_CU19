@@ -1,0 +1,74 @@
+                                                                                                                  
+                                                  
+                                                   
+                                                              AIM : DESIGN AN AUTOMATIC NIGHT LAMP 
+
+                 
+                                        APPARATUS REQUIRED :-
+                                                          
+                                      Arudino,4 LEDS ,Resistor,wires,Breadboard.
+
+                                 THEORY:-
+   
+                                     LED are particular type of diode that converts electrical energy into light. 
+                                     LED stands for EMMITING DIODE".LEDs are tiny bulbs.However,LEDs requires a lot 
+                                     less power. LEDs have two terminals.The positive side of the LEEDis called the
+                                      " anode" and is marked by having a longer "lead"leg".
+                                    The outer negative side of the LED is called the "cathode".
+                                 Currents always flow .the anode to cathode.
+                             
+                               PROGRAM:-
+                               
+                            1.   void setup()
+                               {
+                                 pinMode(10,OUTPUT);
+                                 pinMode(9,OUTPUT);
+                                 pinMode(8,OUTPUT);
+                                 pinMode(7,OUTPUT);
+                               }
+                                void loop ()
+                               {
+                                 for (int i=10;i>=7;--i)
+                                  {
+                                   digitalWrite(i,HIGH);
+                                   }
+                               }
+                          2.    void setup()
+                               {
+                                 pinMode(10,OUTPUT);
+                               }
+                                 
+                               void main()
+                               {
+                                 for(int i=10;i>=10;--i)
+                                   {
+                                     digitalWrite(i,HIGH);
+                                     delay(1000);
+                                        
+                                      digitalWrite(i,LOW);
+
+                                   }
+                               }
+
+                           LEARNING AND OBSERVATION :-
+                              
+                              1. When the brightness is below 50 % then, the 4 LEDs will glows automatically 
+                                and when the brightness is 50 %  then only first LED will glow .
+                              2. This is very helpful to us.Mainly this is used in the beddroom.
+                                                                                                                                    
+                                       
+                            PRECAUTIONS:-
+                                  
+                              1. Always ensure the positive terminal of the LEDs is connected to the output pin of the Arduino Uno.
+                              2. Before uploading the code to the Arduino Uno.Check the port and board under the tools menu.
+                              3. Always ensure that the connections are tightly.
+                                 there should not be any loose connections between the port and the 
+                                 Arduino and Arduino and the breadboard.
+                              4. Always check the LEDs is working or not before connecting to the circuit with the help of multimeter.
+                                
+                                           
+                           RESULT:-
+
+                             Automatic night lamp functioning was verified after uploading the program.
+                                
+                                         
